@@ -2,6 +2,22 @@
     font-size: 20px;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1f2937;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #111827;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #262D3C;
+}
+
 *{
     box-sizing: border-box;
     color: #fff;
@@ -12,16 +28,30 @@ body{
     min-width: 400px;
     background: #1f2937;
     margin: 0;
-
+    display: flex;
+    flex-direction: column;
 }
 
-nav{
+main{
+    position: relative;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
     width: 100%;
+    flex-direction: column;
+}
+
+/* nav */
+
+nav{
+    position: relative;
     height: 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: #111827;
+    width: 100%;
+    margin-bottom: 100px;
 }
 
 #nav-left{
@@ -41,43 +71,6 @@ nav{
     padding-right: 20px;
     padding-left: 20px;
     margin-right: 10px;
-}
-
-main{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-#middle-section{
-    display: flex;
-    min-width: 700px;
-    width: 70%;
-    justify-content: center;
-    position: relative;
-    top: 70px;
-    flex-direction: column;
-}
-
-.post{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    border: 1px solid var(--main-accent-color);
-    margin-bottom: 50px;
-    padding: 10px;
-    background: #111827;
-    border-radius: 10px;
-}
-.post-author{
-    font-weight: bold;
-    font-size: 1rem;
-}
-
-.post-content{
-    width: 100%;
-    padding: 20px;
-    font-size: 0.75rem;
 }
 
 nav a{
@@ -100,4 +93,48 @@ nav a{
 
 #register-button:hover{
     background: #374151;
+}
+
+#logo img{
+    height: 2rem;
+    position: relative;
+    top: 3px;
+}
+
+/* middle section */
+
+#middle-section{
+    display: flex;
+    min-width: 700px;
+    width: 70%;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+}
+.post{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 50px;
+    padding: 10px;
+    background: #111827;
+    border-radius: 10px;
+}
+
+.post-author{
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.post-content{
+    width: 100%;
+    padding: 20px;
+    font-size: 0.75rem;
+}
+
+footer{
+    margin-top: auto;
+    background: #111827;
+    width: 100%;
+    padding: 10px;
 }
