@@ -36,6 +36,14 @@
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem consequatur dignissimos facilis ipsam officia porro possimus, praesentium ratione vero. Animi atque autem cumque deleniti dicta distinctio nemo nihil nisi, nostrum nulla, odit omnis perferendis recusandae sapiente soluta temporibus veritatis!
                 </div>
             </div>
+            <div class="post">
+                <div class="post-author">
+                    Petter
+                </div>
+                <div class="post-content">
+                    
+                </div>
+            </div>
         </div>
             <footer>
                 <div>Icons made from <a href="https://www.onlinewebfonts.com/icon">svg icons</a> is licensed by CC BY 4.0</div>

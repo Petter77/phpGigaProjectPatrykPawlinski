@@ -33,6 +33,7 @@ body{
 }
 
 main{
+    min-width: 400px;
     position: relative;
     display: flex;
     min-height: 100vh;
@@ -85,6 +86,7 @@ nav a{
 
 #login-button:hover{
     background: #1d4ed8;
+    transition: .1s background;
 }
 
 #register-button{
@@ -93,6 +95,7 @@ nav a{
 
 #register-button:hover{
     background: #374151;
+    transition: .1s background;
 }
 
 #logo img{
@@ -105,7 +108,7 @@ nav a{
 
 #middle-section{
     display: flex;
-    min-width: 700px;
+    min-width: 400px;
     width: 70%;
     justify-content: center;
     position: relative;
