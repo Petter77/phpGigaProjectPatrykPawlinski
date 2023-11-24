@@ -20,7 +20,7 @@
 <main>
     <nav>
         <div id="nav-left">
-            <div id="logo">
+            <div class="logo">
                 <img src="img/placeholder.svg" alt="website logo">
             </div>
         </div>
@@ -52,10 +52,11 @@
                 <input type="text" name="lastName" class="form-input">
             </label>
         </div>
+        
         <div id="date">
             <div class="date-element">
                 <label for="day">Day
-                    <select name="day">
+                    <select name="day" id="day">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -84,36 +85,38 @@
                         <option value="26">26</option>
                         <option value="27">27</option>
                         <option value="28">28</option>
-                        <option value="29" class="february-change">29</option>
-                        <option value="30" class="february-change">30</option>
-                        <option value="31" class="month-change">31</option>
+                        <option value="29" id="day29">29</option>
+                        <option value="30" id="day30">30</option>
+                        <option value="31" id="day31">31</option>
                     </select>
                 </label>
             </div>
             <div class="date-element">
                 <label for="month">Month
-                    <select name="month">
-                        <option value='1' class="odd" selected>January</option>
-                        <option value='2' class="february">February</option>
-                        <option value='3' class="odd">March</option>
-                        <option value='4' class="even">April</option>
-                        <option value='5' class="odd">May</option>
-                        <option value='6' class="even">June</option>
-                        <option value='7' class="odd">July</option>
-                        <option value='8' class="even">August</option>
-                        <option value='9' class="odd">September</option>
-                        <option value='10' class="even">October</option>
-                        <option value='11' class="odd">November</option>
-                        <option value='12' class="even">December</option>
+                    <select name="month" id="month">
+                        <option value=1 selected>January</option>
+                        <option value=2 >February</option>
+                        <option value=3 >March</option>
+                        <option value=4 >April</option>
+                        <option value=5 >May</option>
+                        <option value=6 >June</option>
+                        <option value=7 >July</option>
+                        <option value=8 >August</option>
+                        <option value=9 >September</option>
+                        <option value=10 >October</option>
+                        <option value=11 >November</option>
+                        <option value=12 >December</option>
                     </select>
                 </label>
             </div>
             <div class="date-element">
                 <label for="year">Year
-                    <input type="number" class="form-input" name="year" min="1900" max="2100" value="2016">
+                    <input id="year" type="number" class="form-input" name="year" min="1900" max="2100"
+                           value="2016">
                 </label>
             </div>
         </div>
+        
         <div class="form-group">
             <label for="password" class="form-label">Password
                 <input type="password" name="password" class="form-input">
@@ -131,4 +134,5 @@
     </footer>
 </main>
 </body>
+<script src="script.js"></script>
 </html>

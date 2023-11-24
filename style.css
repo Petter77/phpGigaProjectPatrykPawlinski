@@ -98,7 +98,7 @@ nav a{
     transition: .1s background;
 }
 
-#logo img{
+.logo img{
     height: 2rem;
     position: relative;
     top: 3px;
