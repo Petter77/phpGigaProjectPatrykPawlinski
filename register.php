@@ -36,10 +36,15 @@
             </a>
         </div>
     </nav>
-    <form action="">
+    <form method="post"  action="sendRegisterData.php">
         <div class="form-group">
             <label for="email" class="form-label">Email
                 <input type="email" name="email" class="form-input">
+            </label>
+        </div>
+        <div class="form-group">
+            <label for="username" class="form-label">Username
+                <input type="text" name="username" class="form-input">
             </label>
         </div>
         <div class="form-group">
@@ -48,24 +53,23 @@
             </label>
         </div>
         <div class="form-group">
-            <label for="lastName" class="form-label">Last Name (optional)
+            <label for="lastName" class="form-label">Last name(optional)
                 <input type="text" name="lastName" class="form-input">
             </label>
         </div>
-        
         <div id="date">
             <div class="date-element">
                 <label for="day">Day
                     <select name="day" id="day">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                        <option value="08">08</option>
+                        <option value="09">09</option>
                         <option value="10">10</option>
                         <option value="11">11</option>
                         <option value="12">12</option>
