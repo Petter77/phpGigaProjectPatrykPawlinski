@@ -14,5 +14,4 @@ $confirmPassword = $_POST['confirmPassword'];
 
 $register = 'INSERT INTO users VALUES (default, "' . $email . '","' . $name . '","' . $username . '","' . $lastName . '","' . $date . '","' . $password . '")';
 $query = mysqli_query($conn, $register);
-
-header('location:login.php?registerSuccess');
+header('location:../login.php?registerSuccess');

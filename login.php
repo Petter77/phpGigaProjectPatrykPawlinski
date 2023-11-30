@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="pl">
 <head>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/register.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -53,7 +53,7 @@
     ?>
 
 
-    <form method="post" action="loginScript.php">
+    <form method="post" action="scripts/loginScript.php">
         <div class="form-group">
             <label for="email" class="form-label">Email
                 <input type="email" name="email" class="form-input">
@@ -71,5 +71,5 @@
     </footer>
 </main>
 </body>
-<script src="script.js">
+<script src="javascript/script.js">
     </html>

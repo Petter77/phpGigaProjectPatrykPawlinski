@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="pl">
 <head>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/register.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -36,7 +36,7 @@
             </a>
         </div>
     </nav>
-    <form method="post" action="sendRegisterData.php">
+    <form method="post" action="scripts/sendRegisterData.php">
         <div class="form-group">
             <label for="email" class="form-label">Email
                 <input type="email" name="email" class="form-input">
@@ -120,7 +120,6 @@
                 </label>
             </div>
         </div>
-
         <div class="form-group">
             <label for="password" class="form-label">Password
                 <input type="password" name="password" class="form-input">
@@ -138,5 +137,5 @@
     </footer>
 </main>
 </body>
-<script src="script.js"></script>
+<script src="javascript/script.js"></script>
 </html>

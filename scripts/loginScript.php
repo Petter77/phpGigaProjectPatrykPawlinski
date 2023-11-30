@@ -8,8 +8,7 @@ $login = "SELECT COUNT(*) FROM users WHERE email='".$email."' AND password='".$p
 $query = mysqli_query($conn, $login);
 $result = mysqli_fetch_array($query);
 if ($result[0] == 0) {
-    header('location:login.php?loginFailed');
+    header('location:../login.php?loginFailed');
 } else {
-    header('location:index.php');
 //    Start session
 }
