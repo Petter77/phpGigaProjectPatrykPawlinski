@@ -9,46 +9,55 @@
     <meta charset="UTF-8">
     <meta name="author" content="Patryk Pawliński">
     <meta name="logo-author" content="Patryk Pawliński">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>JTPPPCWOW</title>
 </head>
-    <body>
-    <main>
-        <nav>
-            <div id="nav-left">
-                <div id="logo">
-                    <img src="img/placeholder.svg" alt="website logo">
-                </div>
-            </div>
-            <div id="nav-right">
-                <a href="" class="nav-elem"><div></div></a>
-                <a href="register.php" id="register-button" class="nav-elem"><div>Register</div></a>
-                <a href="" id="login-button" class="nav-elem"><div>Login</div></a>
-            </div>
-        </nav>
-        <div id="middle-section">
-            <div class="post">
-                <div class="post-author">
-                    Petter
-                </div>
-                <div class="post-content">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem consequatur dignissimos facilis ipsam officia porro possimus, praesentium ratione vero. Animi atque autem cumque deleniti dicta distinctio nemo nihil nisi, nostrum nulla, odit omnis perferendis recusandae sapiente soluta temporibus veritatis!
-                </div>
-            </div>
-            <div class="post">
-                <div class="post-author">
-                    Petter
-                </div>
-                <div class="post-content">
-                    
-                </div>
+<body>
+<main>
+    <nav>
+        <div id="nav-left">
+            <div id="logo">
+                <img src="img/placeholder.svg" alt="website logo">
             </div>
         </div>
-            <footer>
-                <div>Icons made from <a href="https://www.onlinewebfonts.com/icon">svg icons</a> is licensed by CC BY 4.0</div>
-            </footer>
-    </main>
-        
-    </body>
+        <div id="nav-right">
+            <a href="" class="nav-elem">
+                <div></div>
+            </a>
+            <a href="register.php" id="register-button" class="nav-elem">
+                <div>Register</div>
+            </a>
+            <a href="login.php" id="login-button" class="nav-elem">
+                <div>Login</div>
+            </a>
+        </div>
+    </nav>
+    <div id="middle-section">
+        <div class="post">
+            <div class="post-author">
+                Petter
+            </div>
+            <div class="post-content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem consequatur dignissimos facilis ipsam
+                officia porro possimus, praesentium ratione vero. Animi atque autem cumque deleniti dicta distinctio
+                nemo nihil nisi, nostrum nulla, odit omnis perferendis recusandae sapiente soluta temporibus veritatis!
+            </div>
+        </div>
+        <div class="post">
+            <div class="post-author">
+                Petter
+            </div>
+            <div class="post-content">
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>Icons made from <a href="https://www.onlinewebfonts.com/icon">svg icons</a> is licensed by CC BY 4.0</div>
+    </footer>
+</main>
+
+</body>
 </html>

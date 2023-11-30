@@ -31,22 +31,29 @@
             <a href="register.php" id="register-button" class="nav-elem">
                 <div>Register</div>
             </a>
-            <a href="" id="login-button" class="nav-elem">
+            <a href="login.php" id="login-button" class="nav-elem">
                 <div>Login</div>
             </a>
         </div>
     </nav>
 
+
     <?php
-    if(isset($_GET['registerSuccess'])){
-        echo('pog');
-    }else{
-        echo('unpog');
+    if (isset($_GET['registerSuccess'])) {
+        echo('<div id="registerSuccess">
+            Your account has been created! <br>You can now log in below.
+        </div>');
     }
 
-
+    if (isset($_GET['loginFailed'])) {
+        echo('<div id="loginFailed">
+            Email or password is invalid. <br>Please, try again.
+    </div>');
+    }
     ?>
-    <form method="post"  action="loginScript.php">
+
+
+    <form method="post" action="loginScript.php">
         <div class="form-group">
             <label for="email" class="form-label">Email
                 <input type="email" name="email" class="form-input">
@@ -64,5 +71,5 @@
     </footer>
 </main>
 </body>
-<script src="script.js"></script>
-</html>
+<script src="script.js">
+    </html>

@@ -1,4 +1,4 @@
-:root{
+:root {
     font-size: 20px;
 }
 
@@ -18,12 +18,12 @@
     background: #262D3C;
 }
 
-*{
+* {
     box-sizing: border-box;
     color: #fff;
 }
 
-body{
+body {
     font-family: 'Open Sans', sans-serif;
     min-width: 400px;
     background: #1f2937;
@@ -32,7 +32,7 @@ body{
     flex-direction: column;
 }
 
-main{
+main {
     min-width: 400px;
     position: relative;
     display: flex;
@@ -44,7 +44,7 @@ main{
 
 /* nav */
 
-nav{
+nav {
     position: relative;
     height: 3rem;
     display: flex;
@@ -55,18 +55,18 @@ nav{
     margin-bottom: 100px;
 }
 
-#nav-left{
+#nav-left {
     padding-left: 20px;
     padding-right: 20px;
 }
 
-#nav-right{
+#nav-right {
     display: flex;
     height: 100%;
     align-items: center;
 }
 
-.nav-elem{
+.nav-elem {
     display: flex;
     align-items: center;
     padding-right: 20px;
@@ -74,31 +74,31 @@ nav{
     margin-right: 10px;
 }
 
-nav a{
+nav a {
     text-decoration: none;
     padding: 5px;
     border-radius: 5px;
 }
 
-#login-button{
+#login-button {
     background: #2563eb;
 }
 
-#login-button:hover{
+#login-button:hover {
     background: #1d4ed8;
     transition: .1s background;
 }
 
-#register-button{
+#register-button {
     background: #1f2937;
 }
 
-#register-button:hover{
+#register-button:hover {
     background: #374151;
     transition: .1s background;
 }
 
-.logo img{
+.logo img {
     height: 2rem;
     position: relative;
     top: 3px;
@@ -106,7 +106,7 @@ nav a{
 
 /* middle section */
 
-#middle-section{
+#middle-section {
     display: flex;
     min-width: 400px;
     width: 70%;
@@ -114,7 +114,8 @@ nav a{
     position: relative;
     flex-direction: column;
 }
-.post{
+
+.post {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -124,18 +125,18 @@ nav a{
     border-radius: 10px;
 }
 
-.post-author{
+.post-author {
     font-weight: bold;
     font-size: 1rem;
 }
 
-.post-content{
+.post-content {
     width: 100%;
     padding: 20px;
     font-size: 0.75rem;
 }
 
-footer{
+footer {
     margin-top: auto;
     background: #111827;
     width: 100%;

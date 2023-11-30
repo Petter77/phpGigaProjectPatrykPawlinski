@@ -31,12 +31,12 @@
             <a href="register.php" id="register-button" class="nav-elem">
                 <div>Register</div>
             </a>
-            <a href="" id="login-button" class="nav-elem">
+            <a href="login.php" id="login-button" class="nav-elem">
                 <div>Login</div>
             </a>
         </div>
     </nav>
-    <form method="post"  action="sendRegisterData.php">
+    <form method="post" action="sendRegisterData.php">
         <div class="form-group">
             <label for="email" class="form-label">Email
                 <input type="email" name="email" class="form-input">
@@ -99,17 +99,17 @@
                 <label for="month">Month
                     <select name="month" id="month">
                         <option value=1 selected>January</option>
-                        <option value=2 >February</option>
-                        <option value=3 >March</option>
-                        <option value=4 >April</option>
-                        <option value=5 >May</option>
-                        <option value=6 >June</option>
-                        <option value=7 >July</option>
-                        <option value=8 >August</option>
-                        <option value=9 >September</option>
-                        <option value=10 >October</option>
-                        <option value=11 >November</option>
-                        <option value=12 >December</option>
+                        <option value=2>February</option>
+                        <option value=3>March</option>
+                        <option value=4>April</option>
+                        <option value=5>May</option>
+                        <option value=6>June</option>
+                        <option value=7>July</option>
+                        <option value=8>August</option>
+                        <option value=9>September</option>
+                        <option value=10>October</option>
+                        <option value=11>November</option>
+                        <option value=12>December</option>
                     </select>
                 </label>
             </div>
@@ -120,7 +120,7 @@
                 </label>
             </div>
         </div>
-        
+
         <div class="form-group">
             <label for="password" class="form-label">Password
                 <input type="password" name="password" class="form-input">

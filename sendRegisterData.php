@@ -10,15 +10,9 @@ $month = $_POST['month'];
 $day = $_POST['day'];
 $date = $year . '-' . $month . '-' . $day;
 $password = $_POST['password'];
-
-function checkValue(){
-
-}
-
+$confirmPassword = $_POST['confirmPassword'];
 
 $register = 'INSERT INTO users VALUES (default, "' . $email . '","' . $name . '","' . $username . '","' . $lastName . '","' . $date . '","' . $password . '")';
 $query = mysqli_query($conn, $register);
-
-//validation - if
 
 header('location:login.php?registerSuccess');

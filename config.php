@@ -2,6 +2,6 @@
 $dbhost = '127.0.0.1';
 $dbuser = 'root';
 $dbpass = '';
-$db     = 'gigaproject';
+$db = 'gigaproject';
 
-$conn = new mysqli($dbhost,$dbuser,$dbpass,$db);
+$conn = new mysqli($dbhost, $dbuser, $dbpass, $db);
