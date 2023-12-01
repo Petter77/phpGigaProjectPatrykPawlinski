@@ -120,14 +120,17 @@
                 </label>
             </div>
         </div>
+        <div id="wrongPasswords" style="display: none">
+            Passwords doesn't match XD
+        </div>
         <div class="form-group">
             <label for="password" class="form-label">Password
-                <input type="password" name="password" class="form-input">
+                <input type="password" name="password" class="form-input" id="pass1">
             </label>
         </div>
         <div class="form-group">
             <label for="confirmPassword" class="form-label">Confirm Password
-                <input type="password" name="confirmPassword" class="form-input">
+                <input type="password" name="confirmPassword" class="form-input" id="pass2">
             </label>
         </div>
         <input type="submit" class="form-input">
