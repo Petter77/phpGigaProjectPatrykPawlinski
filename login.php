@@ -71,5 +71,5 @@
     </footer>
 </main>
 </body>
-<script src="javascript/script.js">
+<script src="js/script.js">
     </html>

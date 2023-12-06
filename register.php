@@ -140,5 +140,5 @@
     </footer>
 </main>
 </body>
-<script src="javascript/script.js"></script>
+<script src="js/script.js"></script>
 </html>
