@@ -1,4 +1,5 @@
 form {
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     width: 400px;
@@ -72,7 +73,7 @@ input[type=submit]:hover {
     margin-bottom: 40px;
 }
 
-#registerSuccess{
+#registerSuccess {
     background: #c1fca0;
     border: 3px solid #4eb90e;
 }

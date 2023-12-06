@@ -120,8 +120,8 @@
                 </label>
             </div>
         </div>
-        <div id="wrongPasswords" style="display: none">
-            Passwords doesn't match XD
+        <div id="wrongPasswords" style="display: none; color: #d70f0f; text-align: center">
+            Passwords doesn't match
         </div>
         <div class="form-group">
             <label for="password" class="form-label">Password

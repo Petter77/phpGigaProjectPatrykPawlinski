@@ -1,6 +1,10 @@
 <?php
 require('config.php');
 
+if(isset($_SESSION['newSession'])){
+    header('location:../index.php');
+}
+
 $email = $_POST['email'];
 $password = $_POST['password'];
 
@@ -14,6 +18,6 @@ if ($result[0] == 0) {
     $createSessionName = "SELECT username FROM users WHERE email='" . $email . "' AND password='" . $password . "';";
     $query = mysqli_query($conn, $createSessionName);
     $sessionName = mysqli_fetch_array($query);
-    $_SESSION['newSession'] = $sessionName[0];
+    $_SESSION['newSession'] = 'test';
     header('location:../index.php');
 }
