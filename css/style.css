@@ -83,6 +83,12 @@ nav a {
     background: #2563eb;
 }
 
+.navImage{
+    height: 2rem;
+    top: 3px;
+    position: relative;
+}
+
 #login-button:hover {
     background: #1d4ed8;
     transition: .1s background;
@@ -97,11 +103,6 @@ nav a {
     transition: .1s background;
 }
 
-.logo img {
-    height: 2rem;
-    position: relative;
-    top: 3px;
-}
 
 /* middle section */
 
@@ -138,10 +139,10 @@ nav a {
 }
 
 footer {
-    margin-top: auto;
     background: #111827;
     width: 100%;
     padding: 10px;
+    margin-top: auto;
 }
 
 .adminPanel {
@@ -201,5 +202,24 @@ footer {
     transition: background .1s;
 }
 
+#load-more{
+    background: #2563eb;
+    margin-bottom: 50px;
+    border-radius: 6px;
+    width: 140px;
+    border: none;
+    font-size: 1rem;
+    padding: 20px;
+}
+
+#load-more:hover{
+    background: #1d4ed8;
+    transition: background .1s;
+}
+
+#load-more:focus{
+    outline: none;
+    border: red;
+}
 
 

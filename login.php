@@ -1,3 +1,10 @@
+<?php
+session_start();
+if(isset($_SESSION['newSession'])){
+    header('location:index.php');
+}
+?>
+
 <!doctype html>
 <html lang="pl">
 <head>
@@ -21,7 +28,7 @@
     <nav>
         <div id="nav-left">
             <div class="logo">
-                <img src="img/placeholder.svg" alt="website logo">
+                <img class ="navImage" src="img/placeholder.svg" alt="website logo">
             </div>
         </div>
         <div id="nav-right">
@@ -71,5 +78,5 @@
     </footer>
 </main>
 </body>
-<script src="js/script.js">
-    </html>
+</html>
+<script src="js/script.js"></script>

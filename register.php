@@ -21,7 +21,7 @@
     <nav>
         <div id="nav-left">
             <div class="logo">
-                <img src="img/placeholder.svg" alt="website logo">
+                <img class="navImage" src="img/placeholder.svg" alt="website logo">
             </div>
         </div>
         <div id="nav-right">
