@@ -28,7 +28,7 @@ if(isset($_SESSION['newSession'])){
     <nav>
         <div id="nav-left">
             <div class="logo">
-                <img class ="navImage" src="img/placeholder.svg" alt="website logo">
+                <a href="index.php"><img class="navImage" src="img/placeholder.svg" alt="website logo"></a>
             </div>
         </div>
         <div id="nav-right">

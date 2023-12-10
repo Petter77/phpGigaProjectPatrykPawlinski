@@ -1,14 +1,10 @@
 <?php
 require ('config.php');
 
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-
 $offset = $_POST['offset'];
 $limit = 3;
 
-$sql = "SELECT * FROM post LIMIT $offset, $limit";
+$sql = "SELECT * FROM post  ORDER BY date DESC LIMIT $offset, $limit";
 $result = $conn->query($sql);
 
 $data = array();

@@ -23,8 +23,11 @@ $(document).ready(function () {
 
                     data.forEach(function (row) {
                         let postHtml = '<div class="post">' +
-                            '<div class="post-author">' + row.author + '</div>' +
-                            '<div class="post-content">' + row.content + '</div>' +
+                            '<div class="post-upper-content">'+
+                                '<div class="post-author">' + row.author + '</div>' +
+                                '<div class="date">' + row.date + '</div>' +
+                            '</div>'+
+                                '<div class="post-content">' + row.content + '</div>' +
                             '</div>';
                         container.append(postHtml);
                     });

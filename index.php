@@ -21,7 +21,7 @@
     <nav>
         <div id="nav-left">
             <div id="logo">
-                <img class="navImage" src="img/placeholder.svg" alt="website logo">
+                <a href="index.php"><img class="navImage" src="img/placeholder.svg" alt="website logo"></a>
             </div>
         </div>
         <div id="nav-right">
@@ -30,9 +30,6 @@
             session_start();
             if (!isset($_SESSION['newSession'])) {
                 echo('
-                    <a href="" class="nav-elem">
-                        <div></div>
-                    </a>
                     <a href="register.php" id="register-button" class="nav-elem">
                         <div>Register</div>
                     </a>
@@ -53,8 +50,8 @@
         <?php
         if (isset($_SESSION['newSession'])) {
             echo('
-        <form class="post" id="sendPost">
-            <textarea oninput="auto_grow(this)" name="post-content" id="sendPostInput"
+        <form  class="post" method="POST" id="sendPost" action="scripts/sendPost.php">
+            <textarea name="sendPostInput" oninput="auto_grow(this)" id="sendPostInput"
                               placeholder="Click here, to start typing (max 1024 characters)" maxlength="1024"></textarea>
             <input type="submit" id="sendPostButton" value="Send">
         </form>

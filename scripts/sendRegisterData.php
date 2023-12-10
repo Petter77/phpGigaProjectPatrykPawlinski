@@ -21,6 +21,7 @@ function checkEmail($email): void
     echo($result[0]);
     if ($result[0] != 0) {
         header('location:../register.php?emailAlreadyUsed');
+        exit();
     }
 }
 
@@ -32,20 +33,29 @@ function checkUsername($username): void
     $result = mysqli_fetch_array($query);
     if ($result[0] != 0) {
         header('location:../register.php?usernameAlreadyUsed');
+        exit();
     }
 }
 
 function checkPasswords($password, $confirmPassword): void
 {
     if ($password != $confirmPassword) {
-        header('location:../register.php?passwordsDoesntMatch)');
+        header('location:../register.php?passwordsDoesntMatch');
+        exit();
     }
 }
 
-checkUsername($username);
-checkEmail($email);
-checkPasswords($password, $confirmPassword);
+if (!empty($_POST['email'])&&!empty($_POST['username'])&&!empty($_POST['name'])&&!empty($_POST['password'])) {
+    checkUsername($username);
+    checkEmail($email);
+    checkPasswords($password, $confirmPassword);
 
-$register = 'INSERT INTO users VALUES (default, "' . $email . '","' . $name . '","' . $username . '","' . $lastName . '","' . $date . '","' . $password . '")';
-$query = mysqli_query($conn, $register);
-header('location:../login.php?registerSuccess');
+    $register = 'INSERT INTO users VALUES (default, "' . $email . '","' . $username . '","' . $name . '","' . $lastName . '","' . $date . '","' . $password . '")';
+    $query = mysqli_query($conn, $register);
+    header('location:../login.php?registerSuccess');
+    exit();
+} else {
+    header('location:../register.php');
+}
+
+

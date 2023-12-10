@@ -222,4 +222,12 @@ footer {
     border: red;
 }
 
+.post-upper-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
+.date{
+    width: 240px;
+}

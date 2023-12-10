@@ -21,7 +21,7 @@
     <nav>
         <div id="nav-left">
             <div class="logo">
-                <img class="navImage" src="img/placeholder.svg" alt="website logo">
+                <a href="index.php"><img class="navImage" src="img/placeholder.svg" alt="website logo"></a>
             </div>
         </div>
         <div id="nav-right">
@@ -36,6 +36,24 @@
             </a>
         </div>
     </nav>
+    <?php
+    if (isset($_GET['emailAlreadyUsed'])) {
+        echo('<div id="loginFailed">
+            This email is already used.<br>Please, try again.
+        </div>');
+    }
+
+    if (isset($_GET['usernameAlreadyUsed'])) {
+        echo('<div id="loginFailed">
+            This username is already used.<br>Please, try again.
+        </div>');
+    }
+    if (isset($_GET['passwordsDoesntMatch'])) {
+        echo('<div id="loginFailed">
+            Passwords doesnt match <br>Please, try again.
+        </div>');
+    }
+    ?>
     <form method="post" action="scripts/sendRegisterData.php">
         <div class="form-group">
             <label for="email" class="form-label">Email
@@ -53,7 +71,7 @@
             </label>
         </div>
         <div class="form-group">
-            <label for="lastName" class="form-label">Last name(optional)
+            <label for="lastName" class="form-label">Last name (optional)
                 <input type="text" name="lastName" class="form-input">
             </label>
         </div>
