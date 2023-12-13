@@ -14,6 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="js/ajax.js"></script>
+
     <title>JTPPPCWOW</title>
 </head>
 <body>
@@ -48,6 +49,14 @@
     </nav>
     <div id="middle-section">
         <?php
+        if(isset($_GET['deleteProblem'])){
+            echo('<div id="removeDanied">
+                    <div id="xSymbol"><img src="img/x-symbol.svg" alt="x symbol" style="height: 1rem; cursor: pointer"></div>
+                    
+                    <div id="removeText">You are not allowed to remove this post.</div>
+            </div>');
+        }
+
         if (isset($_SESSION['newSession'])) {
             echo('
         <form  class="post" method="POST" id="sendPost" action="scripts/sendPost.php">
@@ -66,4 +75,5 @@
     </footer>
 </main>
 </body>
+<script src="js/newPost.js"></script>
 </html>

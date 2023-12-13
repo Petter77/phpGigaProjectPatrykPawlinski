@@ -60,7 +60,6 @@ input[type=submit]:hover {
 }
 
 #registerSuccess, #loginFailed {
-
     color: #000000;
     border-radius: 6px;
     padding: 10px;

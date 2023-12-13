@@ -1,6 +1,18 @@
 <?php
 require ('config.php');
+session_start();
 $postID = $_GET['remove'];
-$remove = "UPDATE post SET removed = 1 WHERE id = $postID";
-$query = mysqli_query($conn,$remove);
-header('location:../index.php');
+if(isset($_SESSION['newSession'])){
+    $getUsername = "SELECT author FROM post WHERE id='" . $postID . "';";
+    $result = $conn->query($getUsername);
+    $row = $result->fetch_assoc();
+    if($_SESSION['newSession']==$row['author']){
+        $remove = "UPDATE post SET removed = 1 WHERE id = $postID";
+        $query = mysqli_query($conn,$remove);
+        header('location:../index.php');
+        echo('xdd');
+        exit();
+    }
+}
+header('location:../index.php?deleteProblem');
+
