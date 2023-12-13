@@ -4,7 +4,7 @@ require ('config.php');
 $offset = $_POST['offset'];
 $limit = 3;
 
-$sql = "SELECT * FROM post  ORDER BY date DESC LIMIT $offset, $limit";
+$sql = "SELECT * FROM post WHERE removed=0 ORDER BY date DESC LIMIT $offset, $limit ";
 $result = $conn->query($sql);
 
 $data = array();

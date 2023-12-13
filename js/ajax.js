@@ -14,13 +14,10 @@ $(document).ready(function () {
             dataType: 'json',
             success: function (data) {
                 if (data.length === 0) {
-                    container.append('<p>Brak więcej danych do wyświetlenia.</p>');
+                    container.append('<p style="text-align: center">No more data to display.</p>');
                     loadMoreButton.hide();
                     allDataDisplayed = true;
                 } else {
-                    let nextRecord = data[2];
-                    console.log('Zawartość następnego rekordu:', nextRecord);
-
                     data.forEach(function (row) {
                         let postHtml = '<div class="post">' +
                             '<div class="post-upper-content">'+
@@ -28,11 +25,11 @@ $(document).ready(function () {
                                 '<div class="date">' + row.date + '</div>' +
                             '</div>'+
                                 '<div class="post-content">' + row.content + '</div>' +
+                            '<a href="scripts/deletePost.php?remove='+row.id+'"><div id="removePost">Delete post</div></a>'+
                             '</div>';
                         container.append(postHtml);
                     });
                     offset += limit;
-
                     loadMoreButton.show();
                 }
             }

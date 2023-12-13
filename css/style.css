@@ -231,3 +231,20 @@ footer {
 .date{
     width: 240px;
 }
+.post a{
+    text-decoration: none;
+}
+#removePost{
+    text-decoration: none;
+    cursor: pointer;
+    background: #2563eb;
+    border-radius: 6px;
+    padding: 10px;
+    width: 140px;
+    text-align: center;
+}
+
+#removePost:hover{
+    background: #1d4ed8;
+    transition: background .1s;
+}
