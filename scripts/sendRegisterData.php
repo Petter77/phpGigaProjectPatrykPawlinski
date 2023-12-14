@@ -21,6 +21,7 @@ function checkEmail($email): void
     echo($result[0]);
     if ($result[0] != 0) {
         header('location:../register.php?emailAlreadyUsed');
+        mysqli_close($conn);
         exit();
     }
 }
@@ -33,6 +34,7 @@ function checkUsername($username): void
     $result = mysqli_fetch_array($query);
     if ($result[0] != 0) {
         header('location:../register.php?usernameAlreadyUsed');
+        mysqli_close($conn);
         exit();
     }
 }
@@ -53,6 +55,7 @@ if (!empty($_POST['email'])&&!empty($_POST['username'])&&!empty($_POST['name'])&
     $register = 'INSERT INTO users VALUES (default, "' . $email . '","' . $username . '","' . $name . '","' . $lastName . '","' . $date . '","' . $password . '")';
     $query = mysqli_query($conn, $register);
     header('location:../login.php?registerSuccess');
+    mysqli_close($conn);
     exit();
 } else {
     header('location:../register.php');

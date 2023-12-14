@@ -10,7 +10,7 @@ if(isset($_SESSION['newSession'])){
         $remove = "UPDATE post SET removed = 1 WHERE id = $postID";
         $query = mysqli_query($conn,$remove);
         header('location:../index.php');
-        echo('xdd');
+        mysqli_close($conn);
         exit();
     }
 }
