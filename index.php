@@ -49,7 +49,7 @@
     </nav>
     <div id="middle-section">
         <?php
-        if(isset($_GET['deleteProblem'])){
+        if (isset($_GET['deleteProblem'])) {
             echo('<div id="removeDanied">
                     <div id="xSymbol"><img src="img/x-symbol.svg" alt="x symbol" style="height: 1rem; cursor: pointer"></div>
                     

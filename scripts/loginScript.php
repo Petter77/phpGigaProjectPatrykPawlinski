@@ -21,7 +21,7 @@ if (!empty($_POST['email'])&&!empty($_POST['password'])) {
         $result = $conn->query($getUsername);
         $row = $result->fetch_assoc();
         $wartosc = $row['username'];
-        $_SESSION['newSession']=$wartosc;
+        $_SESSION['newSession'] = $wartosc;
         $conn->close();
         header('location:../index.php');
     }
@@ -32,5 +32,5 @@ else{
 }
 
 
-?>
+
 

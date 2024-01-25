@@ -1,5 +1,5 @@
 <?php
-require ('config.php');
+require('config.php');
 
 $offset = $_POST['offset'];
 $limit = 3;

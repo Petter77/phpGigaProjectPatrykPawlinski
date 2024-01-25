@@ -1,16 +1,16 @@
 <?php
 require('config.php');
 
-$email = $_POST['email'];
-$username = $_POST['username'];
-$name = $_POST['name'];
-$lastName = $_POST['lastName'];
-$year = $_POST['year'];
-$month = $_POST['month'];
-$day = $_POST['day'];
-$date = $year . '-' . $month . '-' . $day;
-$password = $_POST['password'];
-$confirmPassword = $_POST['confirmPassword'];
+$email              = $_POST['email'];
+$username           = $_POST['username'];
+$name               = $_POST['name'];
+$lastName           = $_POST['lastName'];
+$year               = $_POST['year'];
+$month              = $_POST['month'];
+$day                = $_POST['day'];
+$date               = $year . '-' . $month . '-' . $day;
+$password           = $_POST['password'];
+$confirmPassword    = $_POST['confirmPassword'];
 
 function checkEmail($email): void
 {
@@ -47,7 +47,7 @@ function checkPasswords($password, $confirmPassword): void
     }
 }
 
-if (!empty($_POST['email'])&&!empty($_POST['username'])&&!empty($_POST['name'])&&!empty($_POST['password'])) {
+if (!empty($_POST['email']) && !empty($_POST['username']) && !empty($_POST['name']) && !empty($_POST['password'])) {
     checkUsername($username);
     checkEmail($email);
     checkPasswords($password, $confirmPassword);
@@ -60,5 +60,3 @@ if (!empty($_POST['email'])&&!empty($_POST['username'])&&!empty($_POST['name'])&
 } else {
     header('location:../register.php');
 }
-
-

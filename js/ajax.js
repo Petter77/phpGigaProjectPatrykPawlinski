@@ -10,7 +10,7 @@ $(document).ready(function () {
         $.ajax({
             url: 'scripts/ajaxScripts.php',
             type: 'POST',
-            data: { offset: offset },
+            data: {offset: offset},
             dataType: 'json',
             success: function (data) {
                 if (data.length === 0) {
@@ -20,12 +20,12 @@ $(document).ready(function () {
                 } else {
                     data.forEach(function (row) {
                         let postHtml = '<div class="post">' +
-                            '<div class="post-upper-content">'+
-                                '<div class="post-author">' + row.author + '</div>' +
-                                '<div class="date">' + row.date + '</div>' +
-                            '</div>'+
-                                '<div class="post-content">' + row.content + '</div>' +
-                            '<a href="scripts/deletePost.php?remove='+row.id+'"><div id="removePost">Delete post</div></a>'+
+                            '<div class="post-upper-content">' +
+                            '<div class="post-author">' + row.author + '</div>' +
+                            '<div class="date">' + row.date + '</div>' +
+                            '</div>' +
+                            '<div class="post-content">' + row.content + '</div>' +
+                            '<a href="scripts/deletePost.php?remove=' + row.id + '"><div id="removePost">Delete post</div></a>' +
                             '</div>';
                         container.append(postHtml);
                     });
